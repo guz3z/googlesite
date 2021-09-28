@@ -195,3 +195,31 @@ footer {
 .google-text {
     margin-bottom: 35px;
 }
+
+#sign-in {
+    background-color:#4285F4;
+    height: 40px;
+    width: 80px;
+    color: white;
+    border: 0 solid #4285F4;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.img-wrap-show {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.img-wrap:hover .img-wrap-show{
+    visibility: visible;
+    opacity: 1;
+  }
