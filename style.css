@@ -1,4 +1,4 @@
-/* @font-face specifies a custom font do display text and it can be loaded either locally or remotely. */
+
 @font-face {
     font-family: 'Product Sans';
     font-style: normal;
@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: arial, sans-serif;
-    font-size: 0.9em;   /* em means relative to the font size of the element. This says 0.9 times the size of the current font. */
+    font-size: 0.9em;   
 }
 
 a {
@@ -23,25 +23,25 @@ a:hover {
 }
 
 nav {
-    display: flex;  /* By default, the flex-direction is set to row. */
-    justify-content: space-between; /* Used to align the flex items. */
+    display: flex; 
+    justify-content: space-between; 
 }
 
 #menu-left {
     display: flex;
-    justify-content: flex-start;    /* flex-start is the default, aligns items at the beginning of the container. */
-    padding-left: 20px; /* There is a default padding of about 40px from the user agent stylesheet. */
+    justify-content: flex-start;    
+    padding-left: 20px; 
     align-items: center;
 }
 
 #menu-right {
     display: flex;
-    justify-content: flex-end;  /* Aligns the flex items at the end of the container. */
+    justify-content: flex-end;  
     margin-right: 20px;
     align-items: center;
 }
 
-/* Let's space out the icons and links that are housed directly in an unordered list. */
+
 ul > a, ul > img {
     padding: 0 8px;
 }
@@ -53,9 +53,9 @@ ul > a, ul > img {
 
 section {
     display: flex;
-    align-items: center;    /* Note that because the flex direction is column we want to use align items instead of justify content. */
+    align-items: center;    
     flex-direction: column;
-    margin-top: 5vh;   /* % is relative to the parent value. So if outer div is width: 200px and inner div has width 50% inner will be 100px. vh is relative to browser window (viewport) */
+    margin-top: 5vh;   
 }
 
 h1 {
@@ -65,8 +65,8 @@ h1 {
 
 #my-input-container {
     display: flex;
-    flex-direction: row;    /* The default but specifying anyway. */
-    justify-content: space-between;    /* Make it so everything is centered vertically.*/
+    flex-direction: row;   
+    justify-content: space-between;   
     width: 600px;
     height: 38px;
     border: 1px solid gainsboro;
@@ -78,9 +78,9 @@ h1 {
 }
 
 #my-input-container > input {
-    flex-grow: 8;   /* Make the input wider than the images. */
+    flex-grow: 8;   
     border: none;
-    outline: none;  /* When clicking on the input it gets a black highlight. */
+    outline: none;  
 }
 
 img:hover {
@@ -89,7 +89,7 @@ img:hover {
 
 #my-buttons-container {
     display: flex;
-    flex-direction: row;    /* The default but specifying anyway. */
+    flex-direction: row;   
     padding-top: 53px;
 }
 
@@ -113,26 +113,25 @@ button:hover {
 
 footer {
     background-color: #F2F2F2;
-    position: fixed;    /* Element is positioned relative to the viewport, in the same place even if page is scrolled. You then position with top, right, bottom, and left properties.*/
-    width: 100vw;
-    bottom: 0;  /* Affects the vertical position of the element. */
+    position: fixed;   
+    bottom: 0;  
 }
 
 #footer-left {
     display: flex;
-    justify-content: flex-start;    /* flex-start is the default, aligns items at the beginning of the container. */
-    padding-left: 20px; /* There is a default padding of about 40px from the user agent stylesheet. */
+    justify-content: flex-start;    
+    padding-left: 20px; 
     align-items: center;
 }
 
 #footer-right {
     display: flex;
-    justify-content: flex-end;  /* Aligns the flex items at the end of the container. */
+    justify-content: flex-end;  
     margin-right: 20px;
     align-items: center;
 }
 
-/* Start the responsiveness of the screen. */
+
 
 @media (max-width: 630px) {
 
@@ -207,19 +206,3 @@ footer {
 
 }
 
-.img-wrap-show {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(29, 106, 154, 0.72);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.img-wrap:hover .img-wrap-show{
-    visibility: visible;
-    opacity: 1;
-  }
