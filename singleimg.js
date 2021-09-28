@@ -8,6 +8,19 @@ function searchPhoto() {
     //make request to the api
     fetch(url)
     .then(function(data) {
-        console.log(data);
+        return data.json(); 
     })
+    .then(function(data){
+        console.log(data);
+
+        data.results.forEach(photo  => {
+            let result = `
+                <img src="${photo.urls.regular}">
+                <a href="${photo.links.download}">
+                `;
+
+                document.getElementById('results').append(result);
+        });
+    });
+
 }
