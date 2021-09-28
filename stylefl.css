@@ -1,0 +1,58 @@
+#menu-left {
+    display: flex;
+    justify-content: flex-start;    
+    padding-left: 20px; 
+    align-items: center;
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+h1 {
+    margin-right: 20px;
+}
+
+#my-input-container {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;   
+    width: 600px;
+    height: 38px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+}
+
+#my-input-container:hover {
+    box-shadow: 0 0 10px gainsboro;
+}
+
+#my-input-container > input {
+    flex-grow: 8;   
+    border: none;
+    outline: none;  
+}
+
+#menu-right {
+    display: flex;
+    justify-content: flex-end;  
+    margin-right: 20px;
+    align-items: center;
+}
+
+#my-apps:hover, #my-profile:hover {
+    border-radius: 200px;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+#sign-in {
+    background-color:#4285F4;
+    height: 40px;
+    width: 80px;
+    color: white;
+    border: 0 solid #4285F4;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
