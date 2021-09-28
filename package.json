@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "unsplash-js": "^7.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.1"
+  }
+}
