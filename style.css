@@ -183,3 +183,15 @@ footer {
     }
     
 }
+
+
+.small-img-letter {
+    color: #4285F4;
+    font-size: 15px;
+    margin-left: 14%;
+    margin-top: -50px;
+}
+
+.google-text {
+    margin-bottom: 35px;
+}
