@@ -5,9 +5,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="icon" href="./pics/google.PNG">
+    <link rel="icon" href="./img/google-logo.PNG">
     <link rel="stylesheet" href="./style.css">
-    <link defer src="script.js">
+    <script def src="singleimg.js"></script>
 </head>
 <body>
 
@@ -32,14 +32,13 @@
         </h1>
         <h4 class="small-img-letter">images</h4>
         <div id="my-input-container">
-            <img class="img-wrap" src="./img/magnifier.png" alt="magnifier">
-            <p class="img-wrap-show">Search by voice</p>
-            <input type="text">
+            <img src="./img/magnifier.png" alt="magnifier">
+            <input id="searchMe" type="text">
             <img src="./img/mic.png" alt="mic">
         </div>
         <div id="my-buttons-container">
             <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+            <button onclick="searchMe">I'm Feeling Lucky</button>
         </div>
     </section>
 
