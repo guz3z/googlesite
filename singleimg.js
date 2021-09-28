@@ -4,6 +4,8 @@ function searchPhoto() {
 
     let url = "https://api.unsplash.com/search/photos/?client_id=" + clientId + "&query=" +query;
 
+    window.open("feelingluck.html")
+
 
     //make request to the api
     fetch(url)
