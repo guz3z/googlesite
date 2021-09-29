@@ -5,9 +5,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="icon" href="./pics/google.PNG">
+    <link rel="icon" href="./img/google-logo.PNG">
     <link rel="stylesheet" href="./style.css">
+<<<<<<< HEAD
     <script defer src="script.js"></script>
+=======
+    <script def src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script def src="singleimg.js"></script>
+>>>>>>> a98527a4a6b71b4a43ad19f0d5a89cc3e10d2b4f
 </head>
 <body>
 
@@ -18,10 +23,10 @@
                 <a href="#">Store</a>
             </ul>
             <ul id="menu-right">
-                <a href="#">Gmail</a>
-                <a href="#">Images</a>
-                <img id="my-apps" src="./pics/google-apps.PNG" alt="google-apps">
-                <img id="my-profile" src="./pics/me (1).PNG" alt="me">
+                <img id="my-apps" src="./img/google-apps.PNG" alt="google-apps">
+                <div>  
+                    <input id="sign-in" type="button" value="Sign in">
+                </div>
             </ul>
         </nav>
     </header>
@@ -32,13 +37,25 @@
         </h1>
         <h4 class="small-img-letter">images</h4>
         <div id="my-input-container">
+<<<<<<< HEAD
             <img src="./img/magnifier.png" alt="glass">
             <input type="text" id="searchbar">
             <img src="./pics/mic-2.png" alt="mic">
+=======
+            <img src="./img/magnifier.png" alt="magnifier">
+            <input id="searchMe" type="text">
+            <img src="./img/mic.png" alt="mic">
+>>>>>>> a98527a4a6b71b4a43ad19f0d5a89cc3e10d2b4f
         </div>
         <div id="my-buttons-container">
             <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+            <button onclick="searchPhoto()">I'm Feeling Lucky</button>
+        </div>
+    </section>
+
+    <section>
+        <div id="results">
+
         </div>
     </section>
 
