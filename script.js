@@ -1,3 +1,4 @@
+
 function mainSearch() {
     let clientId2 = "taligljG-L0DlFOiWbVJD2JLhuVq1dKlmMclzWyKtU8";
     let query = document.getElementById('searchMe').value;
@@ -28,3 +29,4 @@ function mainSearch() {
     });
 }
     
+
