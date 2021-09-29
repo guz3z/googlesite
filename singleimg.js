@@ -20,7 +20,7 @@ function searchPhoto() {
                 <a href="${photo.links.download}">
                 `;
 
-            document.getElementById('results').html(result);
+            document.getElementById('results').append(result);
         });
     });
 
