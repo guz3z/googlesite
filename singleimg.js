@@ -4,7 +4,6 @@ function searchPhoto() {
 
     let url = "https://api.unsplash.com/search/photos/?client_id=" + clientId + "&query=" +query;
 
-    window.open("feelingluck.html")
 
 
     //make request to the api
@@ -21,7 +20,7 @@ function searchPhoto() {
                 <a href="${photo.links.download}">
                 `;
 
-                document.getElementById('results').append(result);
+            document.getElementById('results').html(result);
         });
     });
 
