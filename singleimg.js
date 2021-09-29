@@ -16,7 +16,7 @@ function searchPhoto() {
 
         data.results.forEach(photo  => {
             let result = `
-                <img src="${photo.urls.regular}">
+                <img src="${photo.urls.regular + "&w=400"}">
                 <a href="${photo.links.download}">
                 `;
 
