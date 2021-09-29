@@ -1,39 +1,30 @@
-const input = document.getElementById('searchbar')
-const photoSpace = document.getElementById('photo-space')
-// import cors from 'cors';
+function mainSearch() {
+    let clientId2 = "taligljG-L0DlFOiWbVJD2JLhuVq1dKlmMclzWyKtU8";
+    let query = document.getElementById('searchMe').value;
 
-input.addEventListener('keydown', function(event){
-    if(event.key === 'Enter')
-        loadImg();
-})
+    let url = "https://api.unsplash.com/search/photos/?client_id=" + clientId2 + "&query=" +query;
 
-function loadImg(response, request){
-    // removeImages();
-    const url = `https://api.unsplash.com/search/photos/?query=${input.value}&per_page=10&client_id=taligljG-L0DlFOiWbVJD2JLhuVq1dKlmMclzWyKtU8`
+    //make request to the api
     fetch(url)
-    .then(response => response.json())
-    // let data = response.json()
-    // {
-        // console.log(response);
-        //     if(response.ok)
-        //         return response.json.stringify
-        //     else
-        //         alert(response.status)
-        //     })
-    .then(data => generateContent(data));
-    console.log(response)
-    // console.log(data);
-        // {
-        // const imageNodes = [];
-        // for(let i = 0; i < data.results.length; i++){
-        //     imageNodes[i] = document.createElement('div');
-        //     imageNodes[i].className = 'img';
-        //     imageNodes[i].style.backgroundImage = 'url('+data.results[i].urls.raw+')';
-        // }
-    // }
-    // )
-}
+    .then(function(data) {
+        return data.json(); 
+    })
+    .then(function(data){
+        console.log(data);
 
-function removeImages(){
-    photoSpace.innerHTML = '';
+        data.results.forEach(photo  => {
+            let result = `
+                <img src="${photo.urls.regular}">
+                <a href="${photo.links.download}">
+                `;
+                let photoSpace = document.getElementById('results');
+                function displayPhotos () {
+                    photoSpace.innerHTML = result
+                }
+                displayPhotos();
+        });
+
+            // document.getElementById('results').append(result);
+    });
 }
+    
