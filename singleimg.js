@@ -4,7 +4,6 @@ function searchPhoto() {
 
     let url = "https://api.unsplash.com/search/photos/?client_id=" + clientId + "&query=" +query;
 
-    window.open("feelingluck.html")
 
 
     //make request to the api
@@ -17,11 +16,11 @@ function searchPhoto() {
 
         data.results.forEach(photo  => {
             let result = `
-                <img src="${photo.urls.regular}">
+                <img src="${photo.urls.regular + "&w=400"}">
                 <a href="${photo.links.download}">
                 `;
 
-                document.getElementById('results').append(result);
+            document.getElementById('results').innerHTML = result;
         });
     });
 

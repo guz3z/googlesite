@@ -126,7 +126,7 @@ footer {
 
 #footer-right {
     display: flex;
-    justify-content: flex-end;  
+    margin-left: 800px;
     margin-right: 20px;
     align-items: center;
 }
@@ -206,6 +206,12 @@ footer {
 
 }
 
+<<<<<<< HEAD
 .postClick {
     bottom: 300px;
 }
+=======
+
+
+
+>>>>>>> 8c4d0c9684f46d61f3ccdd0c4e1c60c38c261055
