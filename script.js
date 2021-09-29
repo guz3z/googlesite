@@ -20,9 +20,14 @@ function mainSearch() {
                 `;
                 let photoSpace = document.getElementById('results');
                 function displayPhotos () {
-                    photoSpace.innerHTML = result
+                    if (result){
+                        photoSpace.innerHTML = result
+                    } else {
+                        photoSpace.innerHTML = '';
+                    }
                 }
                 displayPhotos();
+                searchBar.setAttribute('class', 'postClick')
         });
 
             // document.getElementById('results').append(result);
@@ -40,4 +45,3 @@ searchBar.addEventListener('keydown', (event) => {
         console.log('press the enter key to search')
     }
 })
-
