@@ -1,3 +1,4 @@
+
 function mainSearch() {
     let clientId2 = "taligljG-L0DlFOiWbVJD2JLhuVq1dKlmMclzWyKtU8";
     let query = document.getElementById('searchMe').value;
@@ -28,6 +29,7 @@ function mainSearch() {
     });
 }
     
+
 let searchBar = document.getElementById('searchMe')
 searchBar.addEventListener('keydown', (event) => {
     switch (event.key) {
@@ -38,3 +40,4 @@ searchBar.addEventListener('keydown', (event) => {
         console.log('press the enter key to search')
     }
 })
+
